@@ -1,0 +1,20 @@
+<div class='row'>
+<div class='col-xs-2'>
+<a href='/reviews/new'>Click to Create a Review</a>
+</div>
+
+<div class='col-xs-10'>
+  <ul class='list-group'>
+
+    <% @reviews.each do |review| %>
+      <li class="list-group-item">
+        <p>Title: <%= review.title %></p>
+        <p>Description: <%= review.description %></p>
+        <p>Stars: <%= review.star_count %></p>
+        <p>Author: <%= review.author %></p>
+      </li>
+    <% end %>
+
+  </ul>
+</div>
+</div>

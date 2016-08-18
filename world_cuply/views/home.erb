@@ -1,0 +1,33 @@
+<h3>Sort By: </h3> 
+
+<a href='/results?sort=location'>Location</a>
+<a href='/results?sort=hometeam'>Home Team</a>
+<a href='/results?sort=awayteam'>Away Team</a>
+<a href='/results?sort=status'>Status</a>
+
+
+<br><br>
+
+<% ARRAY.each do |hash| %>
+	<br>
+	<%=	hash['match_number'] %>
+	<br>
+	<%= hash['location'] %>
+	<br>
+	H: <%= hash['home_team']['country'] %>
+	<br> 
+	A: <%= hash['away_team']['country'] %>
+	<br>
+	Date: <%= hash['datetime'] %>
+	<br>
+	Status <%= hash['status'] %>
+	<br>
+
+<% end %>
+
+
+
+
+
+
+

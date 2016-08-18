@@ -1,0 +1,11 @@
+Solution
+========
+
+Problems to fix
+---------------
+
+1. AddPriceToPants was missing the table name :pants.
+2. AddCoolToPants was empty so the column cool was never created.
+3. RenameMaterialToFabricForPants had an extra argument :string
+4. ChangeCoolFromStringToBoolean was trying to change the type of a column that didn't exist. The only way to fix this was by rolling backwards twice and fixing problem #2.
+5. ChangeCoolFromStringToBoolean doesn't change cool from a string to a boolean. Additionally, Rails can't reverse this migration using a 'change' method in the migration file. So we have to replace 'change' with an 'up' and a 'down'.

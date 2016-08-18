@@ -1,0 +1,25 @@
+<h1><%= @restaurants.name %></h1>
+
+<p><strong>Rating: <%= @restaurants.rating %></strong><br>
+	<strong>Cuisine: <%= @restaurants.cuisine %></strong><br>
+	<strong>Delivery: <%= @restaurants.delivery %></strong>
+	<br><br>
+
+<a href="/reviews/create">Add Review</a>
+
+	<h4>Reviews</h4> 
+
+		<ul>
+			<% @restaurants.reviews.each do |r| %>
+			<li>Author: <%= r.name %> <br>
+				Rating: <%= r.rating %> <br>
+				Title: <%= r.title %> <br>
+				Review: <%= r.review %> <br>
+			</li>
+			<br>
+			<% end %>
+
+		</ul>
+
+
+</p>

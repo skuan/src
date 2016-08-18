@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  make: 'honda'
+  model: 'accord'
+  year: 2005
+
+two:
+  make: 'honda'
+  model: 'civic'
+  year: 2013

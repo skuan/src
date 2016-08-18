@@ -1,0 +1,14 @@
+<h4>Index</h4>
+
+<ul>
+	<% @reviews.each do |r| %>
+	<li><%= r.name %> <br>
+		Rating: <%= r.rating %> <br>
+		Title: <%= r.title %> <br>
+		Review: <%= r.review %> <br>
+	
+	</li>
+	<% end %>
+
+</ul>
+
